@@ -14,7 +14,7 @@ import './App.css';
     setValue(eval(value))
   }
 
-  function AC(){
+  function C(){
     setValue("")
   }
 
@@ -26,11 +26,15 @@ import './App.css';
     <>
       <div className='calculator'>
         <h2>Calculator App</h2>
-        <input type="text"
-        placeholder='0'
-        value={value}/>
+        <input
+  type="text"
+  value={value}
+  onChange={(e) => setValue(e.target.value)}
+  placeholder="0"
+/>
+
         <div>
-        <button onClick={AC}>AC</button>
+        <button onClick={C}>C</button>
         <button onClick={Del}>Del</button>
         <button onClick={handle}>%</button>
         <button onClick={handle}>/</button>
