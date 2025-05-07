@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: final-devops
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: final-devops
+  template:
+    metadata:
+      labels:
+        app: final-devops
+    spec:
+      containers:
+      - name: final-devops
+        image: final-devops:latest
+        ports:
+        - containerPort: 3000
