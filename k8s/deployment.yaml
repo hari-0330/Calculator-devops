@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: final-devops
+  labels:
+    app: final-devops
 spec:
   replicas: 1
   selector:
@@ -13,7 +15,7 @@ spec:
         app: final-devops
     spec:
       containers:
-      - name: final-devops
-        image: final-devops:latest
-        ports:
-        - containerPort: 3000
+        - name: final-devops-container
+          image: harikrishnan330/final-devops:latest
+          ports:
+            - containerPort: 3000
