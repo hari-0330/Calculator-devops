@@ -34,10 +34,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "scripts": {
-  "build": "CI=false react-scripts build",
-  "test": "react-scripts test"
-}
+  }
 
 }
