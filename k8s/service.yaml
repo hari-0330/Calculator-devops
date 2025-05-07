@@ -7,6 +7,6 @@ spec:
   selector:
     app: final-devops
   ports:
-  - port: 3000
-    targetPort: 3000
-    nodePort: 30001
+    - port: 3000
+      targetPort: 3000
+      nodePort: 30001  # You can adjust this if needed
