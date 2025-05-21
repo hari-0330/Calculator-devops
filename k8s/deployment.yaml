@@ -18,4 +18,4 @@ spec:
         - name: final-devops-container
           image: harikrishnan330/final-devops:latest
           ports:
-            - containerPort: 3000
+            - containerPort: 80
